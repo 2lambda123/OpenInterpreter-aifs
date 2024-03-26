@@ -238,7 +238,7 @@ def search(query, path=None, file_paths=None, max_results=5, verbose=False, pyth
     index = {}
     if not os.path.exists(path_to_index):
         # No index. We're embedding everything.
-        log(f"Indexing for AI search. This will take time, but only happens once.")
+        log("Indexing for AI search. This will take time, but only happens once.")
     else:
         log(f"Using existing index at `{path_to_index}`")
         with open(path_to_index, 'r') as f:
